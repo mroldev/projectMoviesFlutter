@@ -1,29 +1,18 @@
-
+// ignore_for_file: unused_import
 import 'package:flutter/material.dart';
+import 'package:movies/models/constants.dart';
+import '../../../components/genre_card.dart';
+import 'categories.dart';
+import 'genres.dart';
 
 class Body extends StatelessWidget {
-   const Body({Key? key}) : super(key: key);
+  const Body({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Column(
-      children: const <Widget> [
-
-      ],
+      children: const <Widget>[Categorylist(), Genres()],
     );
   }
 }
 
 
-class Categorylist extends StatefulWidget {
-  const Categorylist({ Key? key }) : super(key: key);
-
-  @override
-  State<Categorylist> createState() => _Categorylist();
-}
-
-class _Categorylist extends State<Categorylist> {
-  @override
-  Widget build(BuildContext context) {
-    return Container(color: const Color(0xFFFFE306));
-  }
-}
